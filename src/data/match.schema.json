@@ -1,0 +1,858 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "attributes": {
+                "type": "object",
+                "properties": {
+                  "createdAt": {
+                    "type": "string",
+                    "examples": [
+                      "2018-03-12T17:41:34Z"
+                    ]
+                  },
+                  "duration": {
+                    "type": "number",
+                    "examples": [
+                      1604
+                    ]
+                  },
+                  "gameMode": {
+                    "type": "string",
+                    "examples": [
+                      "squad"
+                    ]
+                  },
+                  "patchVersion": {
+                    "type": "string",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "shardId": {
+                    "type": "string",
+                    "examples": [
+                      "pc-na"
+                    ]
+                  },
+                  "stats": {
+                    "type": "object",
+                    "additionalProperties": false
+                  },
+                  "tags": {},
+                  "titleId": {
+                    "type": "string",
+                    "examples": [
+                      "bluehole-pubg"
+                    ]
+                  }
+                },
+                "required": [
+                  "createdAt",
+                  "duration",
+                  "gameMode",
+                  "patchVersion",
+                  "shardId",
+                  "stats",
+                  "tags",
+                  "titleId"
+                ],
+                "additionalProperties": false
+              },
+              "id": {
+                "type": "string",
+                "examples": [
+                  "d6f1b510-ef2c-449b-bc14-bd1013e574d7"
+                ]
+              },
+              "links": {
+                "type": "object",
+                "properties": {
+                  "schema": {
+                    "type": "string",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "self": {
+                    "type": "string",
+                    "examples": [
+                      "https://api.playbattlegrounds.com/shards/pc-na/matches/d6f1b510-ef2c-449b-bc14-bd1013e574d7"
+                    ]
+                  }
+                },
+                "required": [
+                  "schema",
+                  "self"
+                ],
+                "additionalProperties": true
+              },
+              "relationships": {
+                "type": "object",
+                "properties": {
+                  "assets": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string",
+                                  "examples": [
+                                    "95d67d71-2620-11e8-b263-0a5864606e0b"
+                                  ]
+                                },
+                                "type": {
+                                  "type": "string",
+                                  "examples": [
+                                    "asset"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "type"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        },
+                        "additionalItems": false
+                      }
+                    },
+                    "required": [
+                      "data"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "rosters": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string",
+                                  "examples": [
+                                    "3a546dbf-9165-43bf-af9e-c300eb17cd46"
+                                  ]
+                                },
+                                "type": {
+                                  "type": "string",
+                                  "examples": [
+                                    "roster"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "type"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        },
+                        "additionalItems": false
+                      }
+                    },
+                    "required": [
+                      "data"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "rounds": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "array",
+                        "items": {},
+                        "additionalItems": false
+                      }
+                    },
+                    "required": [
+                      "data"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "spectators": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "array",
+                        "items": {},
+                        "additionalItems": false
+                      }
+                    },
+                    "required": [
+                      "data"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "assets",
+                  "rosters",
+                  "rounds",
+                  "spectators"
+                ],
+                "additionalProperties": false
+              },
+              "type": {
+                "type": "string",
+                "examples": [
+                  "match"
+                ]
+              }
+            },
+            "required": [
+              "attributes",
+              "id",
+              "links",
+              "relationships",
+              "type"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "additionalItems": false
+    },
+    "included": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "attributes": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "examples": [
+                      "Cc7698"
+                    ]
+                  },
+                  "patchVersion": {
+                    "type": "string",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "shardId": {
+                    "type": "string",
+                    "examples": [
+                      "pc-na"
+                    ]
+                  },
+                  "stats": {
+                    "type": "object",
+                    "additionalProperties": false
+                  },
+                  "titleId": {
+                    "type": "string",
+                    "examples": [
+                      "bluehole-pubg"
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "patchVersion",
+                  "shardId",
+                  "stats",
+                  "titleId"
+                ],
+                "additionalProperties": false
+              },
+              "id": {
+                "type": "string",
+                "examples": [
+                  "account.3136615e4aaf44aa9312d806188bec58"
+                ]
+              },
+              "links": {
+                "type": "object",
+                "properties": {
+                  "schema": {
+                    "type": "string",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "self": {
+                    "type": "string",
+                    "examples": [
+                      ""
+                    ]
+                  }
+                },
+                "required": [
+                  "schema",
+                  "self"
+                ],
+                "additionalProperties": true
+              },
+              "relationships": {
+                "type": "object",
+                "properties": {
+                  "assets": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "array",
+                        "items": {},
+                        "additionalItems": false
+                      }
+                    },
+                    "required": [
+                      "data"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "assets"
+                ],
+                "additionalProperties": false
+              },
+              "type": {
+                "type": "string",
+                "examples": [
+                  "player"
+                ]
+              }
+            },
+            "required": [
+              "attributes",
+              "id",
+              "links",
+              "relationships",
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "attributes": {
+                "type": "object",
+                "properties": {
+                  "actor": {
+                    "type": "string",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "shardId": {
+                    "type": "string",
+                    "examples": [
+                      "pc-na"
+                    ]
+                  },
+                  "stats": {
+                    "type": "object",
+                    "properties": {
+                      "DBNOs": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      },
+                      "assists": {
+                        "type": "number",
+                        "examples": [
+                          2
+                        ]
+                      },
+                      "boosts": {
+                        "type": "number",
+                        "examples": [
+                          1
+                        ]
+                      },
+                      "damageDealt": {
+                        "type": "number",
+                        "examples": [
+                          354.68338
+                        ]
+                      },
+                      "deathType": {
+                        "type": "string",
+                        "examples": [
+                          "byplayer"
+                        ]
+                      },
+                      "headshotKills": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      },
+                      "heals": {
+                        "type": "number",
+                        "examples": [
+                          3
+                        ]
+                      },
+                      "killPlace": {
+                        "type": "number",
+                        "examples": [
+                          11
+                        ]
+                      },
+                      "killPointsDelta": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      },
+                      "killStreaks": {
+                        "type": "number",
+                        "examples": [
+                          1
+                        ]
+                      },
+                      "kills": {
+                        "type": "number",
+                        "examples": [
+                          2
+                        ]
+                      },
+                      "lastKillPoints": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      },
+                      "lastWinPoints": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      },
+                      "longestKill": {
+                        "type": "number",
+                        "examples": [
+                          181.316681
+                        ]
+                      },
+                      "mostDamage": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      },
+                      "name": {
+                        "type": "string",
+                        "examples": [
+                          "Terminal-XC"
+                        ]
+                      },
+                      "playerId": {
+                        "type": "string",
+                        "examples": [
+                          "account.d925e7512f244969a249321b90706ede"
+                        ]
+                      },
+                      "revives": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      },
+                      "rideDistance": {
+                        "type": "number",
+                        "examples": [
+                          1907.28308
+                        ]
+                      },
+                      "roadKills": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      },
+                      "teamKills": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      },
+                      "timeSurvived": {
+                        "type": "number",
+                        "examples": [
+                          1169.783
+                        ]
+                      },
+                      "vehicleDestroys": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      },
+                      "walkDistance": {
+                        "type": "number",
+                        "examples": [
+                          2235.23633
+                        ]
+                      },
+                      "weaponsAcquired": {
+                        "type": "number",
+                        "examples": [
+                          5
+                        ]
+                      },
+                      "winPlace": {
+                        "type": "number",
+                        "examples": [
+                          3
+                        ]
+                      },
+                      "winPointsDelta": {
+                        "type": "number",
+                        "examples": [
+                          0
+                        ]
+                      }
+                    },
+                    "required": [
+                      "DBNOs",
+                      "assists",
+                      "boosts",
+                      "damageDealt",
+                      "deathType",
+                      "headshotKills",
+                      "heals",
+                      "killPlace",
+                      "killPointsDelta",
+                      "killStreaks",
+                      "kills",
+                      "lastKillPoints",
+                      "lastWinPoints",
+                      "longestKill",
+                      "mostDamage",
+                      "name",
+                      "playerId",
+                      "revives",
+                      "rideDistance",
+                      "roadKills",
+                      "teamKills",
+                      "timeSurvived",
+                      "vehicleDestroys",
+                      "walkDistance",
+                      "weaponsAcquired",
+                      "winPlace",
+                      "winPointsDelta"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "actor",
+                  "shardId",
+                  "stats"
+                ],
+                "additionalProperties": false
+              },
+              "id": {
+                "type": "string",
+                "examples": [
+                  "003ba5eb-2448-49a5-83b2-e01d7afc142c"
+                ]
+              },
+              "relationships": {
+                "type": "object",
+                "properties": {
+                  "player": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "examples": [
+                              "account.d925e7512f244969a249321b90706ede"
+                            ]
+                          },
+                          "type": {
+                            "type": "string",
+                            "examples": [
+                              "player"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "type"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "data"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "player"
+                ],
+                "additionalProperties": false
+              },
+              "type": {
+                "type": "string",
+                "examples": [
+                  "participant"
+                ]
+              }
+            },
+            "required": [
+              "attributes",
+              "id",
+              "relationships",
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "attributes": {
+                "type": "object",
+                "properties": {
+                  "shardId": {
+                    "type": "string",
+                    "examples": [
+                      "pc-na"
+                    ]
+                  },
+                  "stats": {
+                    "type": "object",
+                    "properties": {
+                      "rank": {
+                        "type": "number",
+                        "examples": [
+                          23
+                        ]
+                      },
+                      "teamId": {
+                        "type": "number",
+                        "examples": [
+                          28
+                        ]
+                      }
+                    },
+                    "required": [
+                      "rank",
+                      "teamId"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "won": {
+                    "type": "string",
+                    "examples": [
+                      "false"
+                    ]
+                  }
+                },
+                "required": [
+                  "shardId",
+                  "stats",
+                  "won"
+                ],
+                "additionalProperties": false
+              },
+              "id": {
+                "type": "string",
+                "examples": [
+                  "41e4cb2a-eb26-4e80-9761-324c17900972"
+                ]
+              },
+              "relationships": {
+                "type": "object",
+                "properties": {
+                  "participants": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string",
+                                  "examples": [
+                                    "f4c36d88-c1f6-46e1-ad33-ce3080d50cc8"
+                                  ]
+                                },
+                                "type": {
+                                  "type": "string",
+                                  "examples": [
+                                    "participant"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "type"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        },
+                        "additionalItems": false
+                      }
+                    },
+                    "required": [
+                      "data"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "team": {
+                    "type": "object",
+                    "properties": {
+                      "data": {}
+                    },
+                    "required": [
+                      "data"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "participants",
+                  "team"
+                ],
+                "additionalProperties": false
+              },
+              "type": {
+                "type": "string",
+                "examples": [
+                  "roster"
+                ]
+              }
+            },
+            "required": [
+              "attributes",
+              "id",
+              "relationships",
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "attributes": {
+                "type": "object",
+                "properties": {
+                  "URL": {
+                    "type": "string",
+                    "examples": [
+                      "https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-na/2018/03/12/18/10/95d67d71-2620-11e8-b263-0a5864606e0b-telemetry.json"
+                    ]
+                  },
+                  "createdAt": {
+                    "type": "string",
+                    "examples": [
+                      "2018-03-12T18:10:02Z"
+                    ]
+                  },
+                  "description": {
+                    "type": "string",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "name": {
+                    "type": "string",
+                    "examples": [
+                      "telemetry"
+                    ]
+                  }
+                },
+                "required": [
+                  "URL",
+                  "createdAt",
+                  "description",
+                  "name"
+                ],
+                "additionalProperties": false
+              },
+              "id": {
+                "type": "string",
+                "examples": [
+                  "95d67d71-2620-11e8-b263-0a5864606e0b"
+                ]
+              },
+              "type": {
+                "type": "string",
+                "examples": [
+                  "asset"
+                ]
+              }
+            },
+            "required": [
+              "attributes",
+              "id",
+              "type"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "additionalItems": false
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "next": {
+          "type": "string",
+          "examples": [
+            "https://api.playbattlegrounds.com/shards/pc-na/matches?filter[createdAt-end]=2019-12-05T18:00:00Z&page[limit]=1&page[offset]=1&sort=-createdAt"
+          ]
+        },
+        "self": {
+          "type": "string",
+          "examples": [
+            "https://api.playbattlegrounds.com/shards/pc-na/matches?filter[createdAt-end]=2019-12-05T18:00:00Z&page[limit]=1&sort=-createdAt"
+          ]
+        }
+      },
+      "required": [
+        "next",
+        "self"
+      ],
+      "additionalProperties": true
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "data",
+    "included",
+    "links",
+    "meta"
+  ],
+  "additionalProperties": false
+}

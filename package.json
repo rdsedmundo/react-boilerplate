@@ -1,0 +1,44 @@
+{
+  "name": "pubgtv",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "webpack --config config/webpack.config.js",
+    "dev": "webpack-dev-server --hot --config config/webpack.config.js",
+    "lint": "eslint --ext .ts,.tsx src config"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "tslint": "^5.9.1",
+    "webpack": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/html-webpack-plugin": "^2.30.3",
+    "@types/node": "^9.4.7",
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-redux": "^5.0.15",
+    "@types/webpack": "^4.1.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-webpack": "^0.8.4",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "html-webpack-plugin": "^3.0.6",
+    "ts-loader": "^4.0.1",
+    "typescript": "^2.7.2",
+    "typescript-eslint-parser": "^14.0.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  }
+}

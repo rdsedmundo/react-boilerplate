@@ -1,0 +1,26 @@
+extends: "airbnb"
+parser: "typescript-eslint-parser"
+env:
+  browser: true
+  node: true
+settings:
+  import/resolver:
+    webpack:
+      config: "config/webpack.config.js"
+rules:
+  import/no-extraneous-dependencies:
+    - "error"
+    - "devDependencies":
+      - "config/webpack.config.js"
+      - "**/*.test.ts"
+      - "**/*.spec.ts"
+  import/extensions:
+    - "error"
+    - "always"
+    - "js": "never"
+      "ts": "never"
+      "tsx": "never"
+  react/jsx-filename-extension:
+    - "error"
+    - extensions:
+      - ".tsx"
