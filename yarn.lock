@@ -27,11 +27,11 @@
 
 "@types/node@*", "@types/node@^9.4.7":
   version "9.4.7"
-  resolved "http://registry.npmjs.org/@types/node/-/node-9.4.7.tgz#57d81cd98719df2c9de118f2d5f3b1120dcd7275"
+  resolved "https://registry.npmjs.org/@types/node/-/node-9.4.7.tgz#57d81cd98719df2c9de118f2d5f3b1120dcd7275"
 
 "@types/react-dom@^16.0.4":
   version "16.0.4"
-  resolved "http://registry.npmjs.org/@types/react-dom/-/react-dom-16.0.4.tgz#2e8fd45f5443780ed49bf2cdd9809e6091177a7d"
+  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.0.4.tgz#2e8fd45f5443780ed49bf2cdd9809e6091177a7d"
   dependencies:
     "@types/node" "*"
     "@types/react" "*"
@@ -63,7 +63,7 @@
 
 "@types/webpack@*":
   version "4.1.1"
-  resolved "http://registry.npmjs.org/@types/webpack/-/webpack-4.1.1.tgz#646c77457ff3b7b1a27be6cf57cf509c529786a3"
+  resolved "https://registry.npmjs.org/@types/webpack/-/webpack-4.1.1.tgz#646c77457ff3b7b1a27be6cf57cf509c529786a3"
   dependencies:
     "@types/node" "*"
     "@types/tapable" "*"
@@ -72,7 +72,7 @@
 
 "@types/webpack@^4.1.0":
   version "4.1.0"
-  resolved "http://registry.npmjs.org/@types/webpack/-/webpack-4.1.0.tgz#5af4d36ee464c85747c30629cb94f290a1195d7c"
+  resolved "https://registry.npmjs.org/@types/webpack/-/webpack-4.1.0.tgz#5af4d36ee464c85747c30629cb94f290a1195d7c"
   dependencies:
     "@types/node" "*"
     "@types/tapable" "*"
@@ -1478,7 +1478,7 @@ compressible@~2.0.13:
 
 compression@^1.5.2:
   version "1.7.2"
-  resolved "http://registry.npmjs.org/compression/-/compression-1.7.2.tgz#aaffbcd6aaf854b44ebb280353d5ad1651f59a69"
+  resolved "https://registry.npmjs.org/compression/-/compression-1.7.2.tgz#aaffbcd6aaf854b44ebb280353d5ad1651f59a69"
   dependencies:
     accepts "~1.3.4"
     bytes "3.0.0"
@@ -4043,8 +4043,8 @@ mississippi@^2.0.0:
     through2 "^2.0.0"
 
 mixin-deep@^1.2.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.1.tgz#a49e7268dce1a0d9698e45326c5626df3543d0fe"
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.2.tgz#1120b43dc359a785dce65b55b82e257ccf479566"
   dependencies:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
@@ -4332,7 +4332,7 @@ once@^1.3.0, once@^1.3.1, once@^1.3.3, once@^1.4.0:
 
 onetime@^1.0.0:
   version "1.1.0"
-  resolved "http://registry.npmjs.org/onetime/-/onetime-1.1.0.tgz#a1f7838f8314c516f05ecefcbc4ccfe04b4ed789"
+  resolved "https://registry.npmjs.org/onetime/-/onetime-1.1.0.tgz#a1f7838f8314c516f05ecefcbc4ccfe04b4ed789"
 
 onetime@^2.0.0:
   version "2.0.1"
